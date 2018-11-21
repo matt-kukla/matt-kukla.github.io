@@ -3,7 +3,7 @@
 <head>
 <title>Matt Kukla's Webpage</title>
 <link rel="stylesheet" href="style.css">
-
+<body style='font-family="arial"'>
 
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
@@ -21,9 +21,9 @@ href="https://https://twitter.com/n_category">Twitter</a></li>
 
 <script type="text/javascript">
   var imageURLs = [
-       "imgs/random/homotopy.png",
-       "imgs/random/mandelbrot.png",
-       "imgs/random/subob.png"     
+       "imgs/random/homotopy.png"
+     , "imgs/random/homotopy.png"
+     , "imgs/random/homotopy.png"
   ];
   function getImageTag() {
     var img = '<img src=\"';
@@ -37,7 +37,6 @@ href="https://https://twitter.com/n_category">Twitter</a></li>
 <body>
 <div>
 <center>
-<h1>Matt Kukla&#39;s Webpage</h1>
 <script type="text/javascript">
   document.write(getImageTag());
 </script>
