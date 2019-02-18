@@ -22,13 +22,14 @@ href="writings.html">Writings/Papers</a></li>
   var imageURLs = [
        "imgs/random/homotopy.png",
        "imgs/random/mandelbrot.png",
-       "imgs/random/subob.png"     
+       "imgs/random/subob.png",
+       "imgs/random/gc1.png"   
   ];
   function getImageTag() {
     var img = '<img src=\"';
     var randomIndex = Math.floor(Math.random() * imageURLs.length);
     img += imageURLs[randomIndex];
-    img += '\" alt=\"Some alt text\"/>';
+    img += '\" alt=\"Adequate image description\"/>';
     return img;
   }
 </script>
