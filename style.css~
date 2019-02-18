@@ -6,8 +6,11 @@ ul.a {
     background-color: #333;
 }
 
+li {
   
-li a.active{
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -16,13 +19,9 @@ li a.active{
     float: left;
 }
 
-li a.active:hover {
+li a:hover {
     background-color: #111;
 }
-
-
-
-
 
 div {
 
