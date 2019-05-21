@@ -24,9 +24,9 @@ div {
 
     margin-top: 80px;
     margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 200px;
-
+    margin-right: 15rem;
+    margin-left: 15rem;
+    font-size: 110%
 }
 
 h1{text-align:center}
