@@ -5,7 +5,7 @@ ul.a {
     overflow: hidden;
     text-align:center;
     background-color: #333;
-    font-size:110%;
+    font-size:100%;
     table-layout:fixed;
     word-wrap: break-word;
 }
@@ -17,7 +17,7 @@ li a.active{
     padding: 05px 40px;
     text-decoration: none;
     float: left;
-    font-size:110%;
+    font-size:100%;
     table-layout:fixed;
     word-wrap:break-word;
 }
