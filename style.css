@@ -1,7 +1,5 @@
 ul.a {
     list-style-type: none; 
-    margin: 0;
-    padding: 0;
     overflow: hidden; 
     background-color: black;
     table-layout:fixed;
@@ -9,9 +7,9 @@ ul.a {
   
 li a.active{
     color: white; 
-    padding: 05px 40px;
+    padding: 05px 55px;
     text-decoration: none;
-    float: left; 
+    float: left;
 }
 
 div {
