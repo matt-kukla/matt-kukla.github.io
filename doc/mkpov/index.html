@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<title>MKPOV</title>
+
+<style>
+body {
+    background-image: url("bg.png");
+    background-repeat: repeat;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+</style>
+
+<p style="text-align:center;">
+<img src="mkpov.png" alt="MKPOV logo" style="text-align:center;">
+</p>
+
+<h2>Overview</h2>
+
+<p>
+MKPOV is a collection of header/include files for the Persistence of Vision 
+Raytracer (<a href="http://www.povray.org/">POV-Ray</a>).
+</p>
+
+<p>
+These files contain a variety of textures, normals, functions, and other pieces
+of code which I have written over the years and found to be useful and/or produce 
+aesthetically pleasing renders.
+</p>
+
+<p>
+Everything here was written and tested under POV-Ray 3.7, however, it should work 
+with any previous version of the software.  Note that the default 
+<code>noise_generator</code> in POV-Ray 3.1 and below is different than in 
+later versions.  Hence, using these files with version &#8804; 3.1 (or a newer 
+version with <code>noise_generator</code> other than <code>2</code>) will cause 
+anything reliant on noise to differ slightly in appearance from example images
+on this site.
+</p>
+
+<p>
+More will be added to this library over time.  To maintain compatibility with
+older scenes, I will not modify existing code, unless an issue comes up which
+impedes functionality.  See the 
+<a href="https://github.com/matt-kukla/mkpov/branches">GitHub commit log</a> for 
+updates.
+</p>
+
+
+<h2>Files</h2>
+<p>
+Click each filename for details and examples.
+<table border="1" cellpadding="4" cellspacing="1" style="width:500px;">
+	<tbody>
+		<tr>
+			<td><strong>File</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td><a href="mknormals.html">mknormals.inc</a></td>
+			<td>Assorted normals.</td>
+		</tr>
+		<tr>
+			<td><a href="mkskies.html">mkskies.inc</a></td>
+			<td>Skies, pigments for sky spheres.</td>
+		</tr>
+		<tr>
+			<td><a href="mkstones.html">mkstones.inc</a></td>
+			<td>Additional stone textures.  Loads all of the mkstones include
+            files.</td>
+		</tr>
+		<tr>
+			<td><a href="mkstones1.html">mkstones1.inc</a></td>
+			<td>Stone textures MK_Stone1 through MK_Stone12.</td>
+		</tr>
+		<tr>
+			<td><a href="mktextures.html">mktextures.inc</a></td>
+			<td>Misc. other textures.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Installation</h2>
+<p>
+Clone the header files from <a href="https://github.com/matt-kukla/mkpov/">
+GitHub</a> and place them in one of POV-Ray's library paths.  
+</p>
+<br>
+<hr>
+Copyright &copy; 2021 <a href="http://mkukla.net">Matthew Kukla</a> 
+(matt.kukla [at] yandex.ru).  
+</html>
