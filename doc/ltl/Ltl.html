@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Ltl" rel="Chapter" href="Ltl.html"><title>Ltl</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Ltl.html">Ltl</a></h1>
+
+<pre><span id="MODULELtl"><span class="keyword">module</span> Ltl</span>: <code class="code">sig</code> <a href="Ltl.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Linear temporal logic</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="EXCEPTIONNo_next_frame"><span class="keyword">exception</span> No_next_frame</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>No next frame in path.</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEexpr"><span class="keyword">type</span> <code class="type"></code>expr</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.True"><span class="constructor">True</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.False"><span class="constructor">False</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.Var"><span class="constructor">Var</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.And"><span class="constructor">And</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.Or"><span class="constructor">Or</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.Impl"><span class="constructor">Impl</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.Iff"><span class="constructor">Iff</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.U"><span class="constructor">U</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>until</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.R"><span class="constructor">R</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>release</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.W"><span class="constructor">W</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>weak</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.M"><span class="constructor">M</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> * <a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>strong release</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.Not"><span class="constructor">Not</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.X"><span class="constructor">X</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>◯f</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.G"><span class="constructor">G</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>□f</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTexpr.F"><span class="constructor">F</span></span> <span class="keyword">of</span> <code class="type"><a href="Ltl.html#TYPEexpr">expr</a></code></code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>◊f</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr></table>
+
+
+
+<pre><span id="VALfmla_as_string"><span class="keyword">val</span> fmla_as_string</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Represent formula as string.</p>
+</div>
+</div>
+
+<pre><span id="VALto_atomics"><span class="keyword">val</span> to_atomics</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> <a href="Ltl.html#TYPEexpr">expr</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Rewrite formula to use only atomic connectives/modal operators.</p>
+</div>
+</div>
+
+<pre><span id="VALeval_fmla"><span class="keyword">val</span> eval_fmla</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> (string * bool) list list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Evaluate formula over path.</p>
+</div>
+</div>
+</body></html>
