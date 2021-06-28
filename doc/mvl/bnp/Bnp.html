@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Bnp" rel="Chapter" href="Bnp.html"><title>Bnp</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Bnp.html">Bnp</a></h1>
+
+<pre><span id="MODULEBnp"><span class="keyword">module</span> Bnp</span>: <code class="code">sig</code> <a href="Bnp.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>bnp - Belnap four-valued logic.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEbelnap"><span class="keyword">type</span> <code class="type"></code>belnap</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbelnap.T"><span class="constructor">T</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbelnap.F"><span class="constructor">F</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbelnap.N"><span class="constructor">N</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbelnap.B"><span class="constructor">B</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>Truth values (True, False, Neither, Both).</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEbnp_expr"><span class="keyword">type</span> <code class="type"></code>bnp_expr</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Val"><span class="constructor">Val</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.And"><span class="constructor">And</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Or"><span class="constructor">Or</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Not"><span class="constructor">Not</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Impl"><span class="constructor">Impl</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>Formulas</p>
+</div>
+</div>
+
+
+<pre><span id="VALnot_bnp"><span class="keyword">val</span> not_bnp</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Negation</p>
+</div>
+</div>
+
+<pre><span id="VALand_bnp"><span class="keyword">val</span> and_bnp</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Conjunction</p>
+</div>
+</div>
+
+<pre><span id="VALor_bnp"><span class="keyword">val</span> or_bnp</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Disjunction</p>
+</div>
+</div>
+
+<pre><span id="VALmaterial_implication"><span class="keyword">val</span> material_implication</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Material implication</p>
+</div>
+</div>
+
+<pre><span id="VALeval_bnp"><span class="keyword">val</span> eval_bnp</span> : <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Evaluate formula</p>
+</div>
+</div>
+</body></html>
