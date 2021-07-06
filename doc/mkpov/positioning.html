@@ -7,17 +7,42 @@
 <p>
 Various macros for positioning objects.
 </p>
-<p>
-<code>N_roots(N, R, Ob)</code> <dd> Places a copy of object <code>Ob</code>
-at each <code>N</code>th root of unity in the xz-plane, scaled by
-<code>R</code>.</dd>
 
+<p>
+For demonstration purposes, take <code>S</code> to be a <code>sphere</code>
+primitive with radius 0.5.
 </p>
+
+<p>
+<code>N_roots(N, R, Ob)</code>:<dd> Constructs a union containing a copy of 
+object <code>Ob</code> at each <code>N</code>th root of unity in the xz-plane, 
+scaled by <code>R</code>.
+
 <figure>
-<img src="samples/nroot.png" alt="Example of N_roots">
-<figcaption><code>N_roots(8,2,X)</code> where <code>X</code> is a sphere
-with radius 0.5. </figcaption>
+<img src="samples/nroot.png" alt="N_roots example">
+<figcaption><code>N_roots(8,2,S)</code></figcaption>
 </figure>
+</dd>
+</p>
+
+<p>
+<code>Row(Ob, Start, N, Space)</code>:
+<dd>Constructs a union containing <code>N</code> copies of object <code>Ob</code> 
+in a row, starting at point <code>Start</code> and spaced apart by vector
+<code>Space</code>.
+
+<figure>
+<img src="samples/row1.png" alt="Row example">
+<figcaption><code>Row(S, <-3, 0, 2>, 4, <2, 0, 0>)</code></figcaption>
+</figure>
+
+<figure>
+<img src="samples/row2.png" alt="Another row example">
+<figcaption><code>Row(S, <-3, 0, 2>, 4, <2, 0.5, 1>)</code></figcaption>
+</figure>
+
+</dd>
+
 <hr>
 <a href="mktextures.html">
 <img src="../../imgs/buttons/lbutton-g.png" alt="mktextures.inc" height=40 
