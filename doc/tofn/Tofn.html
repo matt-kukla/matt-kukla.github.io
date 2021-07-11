@@ -138,8 +138,9 @@ when the types match.</p>
 
 <pre><span id="VALtuplemap_safe"><span class="keyword">val</span> tuplemap_safe</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Apply a binary operator to the essential tuples of two OFNs, only
-if the types match.</p>
+<p>Apply a binary operator to the essential tuples of two OFNs only when the
+types match.  Raises <code class="code">OFN_type_mistmatch</code> if arguments are not of the same
+type.</p>
 </div>
 </div>
 
