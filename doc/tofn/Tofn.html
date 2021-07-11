@@ -123,9 +123,23 @@ an element of <code class="code">float * float * float * float</code>) for ease-
 </div>
 </div>
 
+<pre><span id="VALtuplemap_safe"><span class="keyword">val</span> tuplemap_safe</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Application of a binary operator to the essential tuples of two OFNs, only
+when the types match.</p>
+</div>
+</div>
+
 <pre><span id="VALtuplemap"><span class="keyword">val</span> tuplemap</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Application of a binary operator to the essential tuples of two OFNs.</p>
+<p>Apply a binary operator to the essential tuples of two OFNs.</p>
+</div>
+</div>
+
+<pre><span id="VALtuplemap_safe"><span class="keyword">val</span> tuplemap_safe</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Apply a binary operator to the essential tuples of two OFNs, only
+if the types match.</p>
 </div>
 </div>
 
@@ -137,7 +151,7 @@ an element of <code class="code">float * float * float * float</code>) for ease-
 
 <pre><span id="VAL(|-|)"><span class="keyword">val</span> (|-|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>OFN Subtraction.</p>
+<p>OFN subtraction.</p>
 </div>
 </div>
 
@@ -175,6 +189,12 @@ an element of <code class="code">float * float * float * float</code>) for ease-
 <div class="info-desc">
 <p>The membership function associated to an OFN.  Raises <code class="code">Improper_OFN</code> if the OFN 
 is improper.</p>
+</div>
+</div>
+
+<pre><span id="VALconv_ofn"><span class="keyword">val</span> conv_ofn</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEfamily">family</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Convert an OFN of one type to another type.</p>
 </div>
 </div>
 </body></html>
