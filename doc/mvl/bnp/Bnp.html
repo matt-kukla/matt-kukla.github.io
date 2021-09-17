@@ -72,6 +72,20 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Not"><span class="constructor">Not</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Cnf"><span class="constructor">Cnf</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
 <code><span id="TYPEELTbnp_expr.And"><span class="constructor">And</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
 
 </tr>
@@ -86,14 +100,42 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTbnp_expr.Not"><span class="constructor">Not</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+<code><span id="TYPEELTbnp_expr.Impl"><span class="constructor">Impl</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
 
 </tr>
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTbnp_expr.Impl"><span class="constructor">Impl</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+<code><span id="TYPEELTbnp_expr.Impl_CMI"><span class="constructor">Impl_CMI</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Impl_BN"><span class="constructor">Impl_BN</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Impl_ST"><span class="constructor">Impl_ST</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Cns"><span class="constructor">Cns</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbnp_expr.Gul"><span class="constructor">Gul</span></span> <span class="keyword">of</span> <code class="type"><a href="Bnp.html#TYPEbnp_expr">bnp_expr</a> * <a href="Bnp.html#TYPEbnp_expr">bnp_expr</a></code></code></td>
 
 </tr></table>
 
@@ -102,6 +144,12 @@
 <pre><span id="VALnot_bnp"><span class="keyword">val</span> not_bnp</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Negation</p>
+</div>
+</div>
+
+<pre><span id="VALconf"><span class="keyword">val</span> conf</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Conflation</p>
 </div>
 </div>
 
@@ -120,6 +168,36 @@
 <pre><span id="VALimplic"><span class="keyword">val</span> implic</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Truth-preserving implication</p>
+</div>
+</div>
+
+<pre><span id="VALimplic_cmi"><span class="keyword">val</span> implic_cmi</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Material implication</p>
+</div>
+</div>
+
+<pre><span id="VALimplic_bn"><span class="keyword">val</span> implic_bn</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Belnap implication</p>
+</div>
+</div>
+
+<pre><span id="VALimplic_st"><span class="keyword">val</span> implic_st</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Strong implication</p>
+</div>
+</div>
+
+<pre><span id="VALcns"><span class="keyword">val</span> cns</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Consensus</p>
+</div>
+</div>
+
+<pre><span id="VALgull"><span class="keyword">val</span> gull</span> : <code class="type"><a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a> -> <a href="Bnp.html#TYPEbelnap">belnap</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Gullibility</p>
 </div>
 </div>
 
