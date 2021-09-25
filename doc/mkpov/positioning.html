@@ -8,14 +8,14 @@ Various macros for positioning objects.
 </p>
 
 <p>
-For demonstration purposes, take <code>S</code> to be a <code>sphere</code>
-primitive with radius 0.5.
+In the following examples, <code>S</code> is a sphere primitive with 
+radius 0.5, and <code>C</code> is a cube of length 0.4.
 </p>
-
+<hr>
 <p>
 <code>N_roots(N, R, Ob)</code>:<dd> Constructs a union containing copies of 
 object <code>Ob</code> at each <code>N</code>th root of unity in the xz-plane, 
-scaled by <code>R</code>.
+at distance <code>R</code> from 0.
 
 <figure>
 <img src="samples/nroot.png" alt="N_roots example">
@@ -23,24 +23,49 @@ scaled by <code>R</code>.
 </figure>
 </dd>
 </p>
+<hr>
+<p>
+<code>N_roots_SR(N, R, Ob, Sc, Rt)</code>:<dd>Same as <code>N_roots(N, R,
+Ob)</code>, with the <code>K</code>th copy of <code>Ob</code> scaled by
+<code>1+Sc*K</code> and rotated by <code>Rt*K</code> for each 0,...,<code>K</code>.
 
+<figure>
+<img src="samples/nroot_sr.png" alt="N_roots_SR example">
+<figcaption><code>N_roots_SR(8, 2, C, 0, 45*y)</code></figcaption>
+</figure>
+</dd>
+</p>
+<hr>
 <p>
 <code>Row(Ob, Start, N, Space)</code>:
 <dd>Constructs a union containing <code>N</code> copies of object <code>Ob</code> 
 in a row, starting at point <code>Start</code> and spaced apart by vector
 <code>Space</code>.
 
-<figure>
+<figure style="display:inline-block">
 <img src="samples/row1.png" alt="Row example">
 <figcaption><code>Row(S, <-3, 0, 2>, 4, <2, 0, 0>)</code></figcaption>
 </figure>
-
-<figure>
+<figure style="display:inline-block">
 <img src="samples/row2.png" alt="Another row example">
 <figcaption><code>Row(S, <-3, 0, 2>, 4, <2, 0.5, 1>)</code></figcaption>
 </figure>
 
 </dd>
+</p>
+<hr>
+<p>
+<code>Row_SR(Ob, Start, N, Space, R, S)</code>:<dd>Same as <code>(Ob, Start, N,
+Space)</code> but with the <code>K</code>th copy of object scaled by
+<code>1+S*K</code> and rotated by <code>R*K<code> for each 0,...,<code>K</code>.
+
+<figure>
+<img src="samples/row_sr.png" alt="Row example">
+<figcaption><code>Row_SR(C, <-3, 0, 2>, 4, <2, 0.5, 1>, <45,45,45>, 0.15)</code></figcaption>
+</figure>
+
+</dd>
+</p>
 
 <hr>
 <a href="mktextures.html">
