@@ -94,7 +94,7 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTtern_expr.AndBv"><span class="constructor">AndBv</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+<code><span id="TYPEELTtern_expr.AndSt"><span class="constructor">AndSt</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 
 </tr>
 <tr>
@@ -108,7 +108,7 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTtern_expr.OrBv"><span class="constructor">OrBv</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+<code><span id="TYPEELTtern_expr.OrSt"><span class="constructor">OrSt</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 
 </tr>
 <tr>
@@ -123,6 +123,13 @@
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
 <code><span id="TYPEELTtern_expr.Impl_Lukas"><span class="constructor">Impl_Lukas</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtern_expr.ImplSt"><span class="constructor">ImplSt</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 
 </tr>
 <tr>
@@ -152,9 +159,9 @@
 </div>
 </div>
 
-<pre><span id="VALand_bvar"><span class="keyword">val</span> and_bvar</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALand_st"><span class="keyword">val</span> and_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Bochvar internal "and"</p>
+<p>Strict "and"</p>
 </div>
 </div>
 
@@ -164,9 +171,9 @@
 </div>
 </div>
 
-<pre><span id="VALor_bvar"><span class="keyword">val</span> or_bvar</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALor_st"><span class="keyword">val</span> or_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Bochvar internal "or"</p>
+<p>Strict "or"</p>
 </div>
 </div>
 
@@ -182,9 +189,9 @@
 </div>
 </div>
 
-<pre><span id="VALimpl_bvar"><span class="keyword">val</span> impl_bvar</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALimpl_st"><span class="keyword">val</span> impl_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Bochvar implication</p>
+<p>Strict implication</p>
 </div>
 </div>
 
