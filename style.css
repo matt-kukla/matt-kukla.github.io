@@ -1,8 +1,11 @@
 ul.a {
     list-style-type: none; 
     overflow: hidden; 
-    background-color: black;
-    table-layout:fixed;
+    background-color: #363636;
+    border-color: #363636;
+    border-style: outset;
+    border-width: 10px;
+    table-layout: fixed;
 }
   
 li a.active{
@@ -12,3 +15,5 @@ li a.active{
     float: left;
 }
 
+li a:hover {
+}
