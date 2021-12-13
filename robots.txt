@@ -1,0 +1,3 @@
+Sitemap: http://www.mkukla.net/sitemap.xml
+User-agent: *
+Disallow:
