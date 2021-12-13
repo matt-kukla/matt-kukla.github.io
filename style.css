@@ -15,5 +15,6 @@ li a.active{
     float: left;
 }
 
-li a:hover {
+h1 {
+    text-align:center;
 }
