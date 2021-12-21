@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css" type="text/css">
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="Start" href="index.html">
 <link rel="Up" href="index.html">
@@ -57,6 +57,13 @@
 
 
 <pre><code><span id="TYPEtern_expr"><span class="keyword">type</span> <code class="type"></code>tern_expr</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtern_expr.Var"><span class="constructor">Var</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
@@ -136,6 +143,20 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
+<code><span id="TYPEELTtern_expr.BicondSt"><span class="constructor">BicondSt</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtern_expr.XorSt"><span class="constructor">XorSt</span></span> <span class="keyword">of</span> <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
 <code><span id="TYPEELTtern_expr.Binop"><span class="constructor">Binop</span></span> <span class="keyword">of</span> <code class="type">(<a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a>) * <a href="Tern.html#TYPEtern_expr">tern_expr</a><br>        * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 <td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
 <div class="info-desc">
@@ -195,9 +216,15 @@
 </div>
 </div>
 
-<pre><span id="VALeval_tern"><span class="keyword">val</span> eval_tern</span> : <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALbicond_st"><span class="keyword">val</span> bicond_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Evaluate ternary formula</p>
+<p>Strict biconditional</p>
+</div>
+</div>
+
+<pre><span id="VALeval_tern"><span class="keyword">val</span> eval_tern</span> : <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> -> (string * <a href="Tern.html#TYPEtrilean">trilean</a>) list -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Evaluate ternary formula over given valuation</p>
 </div>
 </div>
 
@@ -205,6 +232,12 @@
 <div class="info-desc">
 <p>Convert T or F to respective boolean values.  
 Raises <code class="code">Unknown</code> when passed <code class="code">U</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALwdef"><span class="keyword">val</span> wdef</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Well-definedness</p>
 </div>
 </div>
 </body></html>
