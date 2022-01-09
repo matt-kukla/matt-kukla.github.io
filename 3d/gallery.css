@@ -1,0 +1,23 @@
+table {
+    margin:auto;
+/*    padding:10px;
+    padding-left:25px;
+    padding-right:25px; */
+
+}
+
+td { padding: 10px; }
+
+img {
+    display:block;
+    border:ridge;
+    border-color:black;
+}
+
+.b { 
+    border:none;
+    display:inline;
+    padding:auto;/*
+    padding-left:25px;
+    padding-right:25px;*/
+}
