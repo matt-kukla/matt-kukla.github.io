@@ -82,7 +82,7 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTtern_expr.Unop"><span class="constructor">Unop</span></span> <span class="keyword">of</span> <code class="type">(<a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a>) * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+<code><span id="TYPEELTtern_expr.Unop"><span class="constructor">Unop</span></span> <span class="keyword">of</span> <code class="type">(<a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a>) * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 <td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
 <div class="info-desc">
 <p>User-defined unary operators</p>
@@ -157,7 +157,7 @@
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTtern_expr.Binop"><span class="constructor">Binop</span></span> <span class="keyword">of</span> <code class="type">(<a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a>) * <a href="Tern.html#TYPEtern_expr">tern_expr</a><br>        * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
+<code><span id="TYPEELTtern_expr.Binop"><span class="constructor">Binop</span></span> <span class="keyword">of</span> <code class="type">(<a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a>) * <a href="Tern.html#TYPEtern_expr">tern_expr</a><br>        * <a href="Tern.html#TYPEtern_expr">tern_expr</a></code></code></td>
 <td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
 <div class="info-desc">
 <p>User-defined binary operators</p>
@@ -168,76 +168,82 @@
 
 
 
-<pre><span id="VALnot_tern"><span class="keyword">val</span> not_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALnot_tern"><span class="keyword">val</span> not_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Ternary "not"</p>
 </div>
 </div>
 
-<pre><span id="VALand_tern"><span class="keyword">val</span> and_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALand_tern"><span class="keyword">val</span> and_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Ternary "and"</p>
 </div>
 </div>
 
-<pre><span id="VALand_st"><span class="keyword">val</span> and_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALand_st"><span class="keyword">val</span> and_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Strict "and"</p>
 </div>
 </div>
 
-<pre><span id="VALor_tern"><span class="keyword">val</span> or_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALor_tern"><span class="keyword">val</span> or_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Ternary "or"</p>
 </div>
 </div>
 
-<pre><span id="VALor_st"><span class="keyword">val</span> or_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALor_st"><span class="keyword">val</span> or_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Strict "or"</p>
 </div>
 </div>
 
-<pre><span id="VALimpl_tern"><span class="keyword">val</span> impl_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALimpl_tern"><span class="keyword">val</span> impl_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Regular ternary (Kleene) implication</p>
 </div>
 </div>
 
-<pre><span id="VALimpl_lukas"><span class="keyword">val</span> impl_lukas</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALimpl_lukas"><span class="keyword">val</span> impl_lukas</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Łukasiewicz implication</p>
 </div>
 </div>
 
-<pre><span id="VALimpl_st"><span class="keyword">val</span> impl_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALimpl_st"><span class="keyword">val</span> impl_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Strict implication</p>
 </div>
 </div>
 
-<pre><span id="VALbicond_st"><span class="keyword">val</span> bicond_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a> -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALbicond_st"><span class="keyword">val</span> bicond_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Strict biconditional</p>
 </div>
 </div>
 
-<pre><span id="VALeval_tern"><span class="keyword">val</span> eval_tern</span> : <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> -> (string * <a href="Tern.html#TYPEtrilean">trilean</a>) list -> <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
+<pre><span id="VALeval_tern"><span class="keyword">val</span> eval_tern</span> : <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> -&gt; (string * <a href="Tern.html#TYPEtrilean">trilean</a>) list -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Evaluate ternary formula over given valuation</p>
+<p>Evaluate expression over given valuation</p>
 </div>
 </div>
 
-<pre><span id="VALto_bool"><span class="keyword">val</span> to_bool</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> bool</code></pre><div class="info ">
+<pre><span id="VALto_bool"><span class="keyword">val</span> to_bool</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Convert T or F to respective boolean values.  
 Raises <code class="code">Unknown</code> when passed <code class="code">U</code>.</p>
 </div>
 </div>
 
-<pre><span id="VALwdef"><span class="keyword">val</span> wdef</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -> bool</code></pre><div class="info ">
+<pre><span id="VALwdef"><span class="keyword">val</span> wdef</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Well-definedness</p>
+</div>
+</div>
+
+<pre><span id="VALis_strict"><span class="keyword">val</span> is_strict</span> : <code class="type"><a href="Tern.html#TYPEtern_expr">tern_expr</a> -&gt; bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Check if expression contains all strict connectives.</p>
 </div>
 </div>
 </body></html>
