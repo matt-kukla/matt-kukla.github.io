@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airspy HF+ with Gqrx</title>
+<h1>Gqrx/Airspy HF+ Configuration on Linux</h1><hr>
+<p>
+Support for the Airspy HF+ has been present in <a href="http://gqrx.dk">Gqrx</a>
+as of version 2.9.  However, not all installations will properly configure udev, 
+which results in the device being visible only with root privileges.
+</p>
+<p>
+If the Airspy only appears in Gqrx when running as root, edit 
+ <code>/etc/udev/rules.d/52-airspyhf.rules</code> to include:
+<blockquote>
+<code>ATTR{idVendor}=="03eb", ATTR{idProduct}=="800c", SYMLINK+="airspyhf-%k",
+MODE="660", GROUP="plugdev"</code>
+</blockquote>
+The device will now be available to all users in the <code>plugdev</code>
+group.  After adding yourself to this group and rebooting (or reloading udev), 
+``Airspy HF+'' should should appear as an option under the ``Configure I/O devices'' menu in Gqrx.
+<br>
+<hr>
+<a href="index.html">
+<img src="../imgs/buttons/lbuttongr.png" alt="Back" style="vertical-align:middle">
+</a>Back
+<hr>
+&copy; 2022 <a href="http://mkukla.net">Matthew Kukla</a> K3JMK
+</html>
