@@ -6,11 +6,12 @@
 <p>
 Support for the Airspy HF+ has been present in <a href="http://gqrx.dk">Gqrx</a>
 as of version 2.9.  However, not all installations configure the associated udev
-rules correctly, which results in the device being visible only with root privileges.
+rules correctly, which results in the device being visible only with root 
+privileges.
 </p>
 <p>
 If the Airspy only appears in Gqrx when running as root, edit 
- <code>/etc/udev/rules.d/52-airspyhf.rules</code> to include:
+ <code>/etc/udev/rules.d/52-airspyhf.rules</code> to contain:
 <blockquote>
 <code>ATTR{idVendor}=="03eb", ATTR{idProduct}=="800c", SYMLINK+="airspyhf-%k",
 MODE="660", GROUP="plugdev"</code>
