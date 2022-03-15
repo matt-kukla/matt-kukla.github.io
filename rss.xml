@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>mkukla.net</title>
+        <description>mkukla.net</description>
+        <link>https://mkukla.net</link>
+        <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
+    </channel>
+    <item>
+        <title>RSS</title>
+        <description>RSS feed added to site.</description>
+        <link>https://mkukla.net/rss.xml</link>
+        <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
+    </item>
+</rss>
