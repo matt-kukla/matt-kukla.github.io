@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airspy HF+ and udev </title>
+<h1>Airspy HF+ udev configuration</h1><hr>
+<p>
+Some driver packages for the AirspyHF+ will not configure udev
+rules correctly, which results in the device being visible only with root 
+privileges.
+</p>
+<p>
+Check first that the Airspy is visible as root.  Two simple ways
+to do this:
+<ul>
+    <li>Run your SDR application of choice as root, and see if the device
+    appears.</li>
+    <li>With <code>airspyhf_info</code> is installed (included in many
+    distributions' Airspy driver packages), run it as root. If everything
+    has installed correctly and the device is recognized, it will print the serial
+    number, firmware version, etc. in the following format:
+
+    <blockquote><code>
+    AirSpy HF library version: 1.6.8<br><br>
+
+    S/N: 0xC85297808AB42583<br>
+    Part ID: 0x00000002<br>
+    Firmware Version: R3.0.7-CD<br>
+    Available sample rates: 912 kS/s 768 kS/s 456 kS/s
+    384 kS/s 256 kS/s 192 kS/s
+    </code>
+
+    </blockquote></li>
+
+</ul>
+If neither of the above work, there may be a larger issue.  A good place to
+start is by inspecting dmesg to see if the Airspy is actually detected when
+plugged in.
+</p>
+<p>
+After verifying that the device is actually visible as root, it is fairly
+straightforward to configure udev.
+  Edit <code>/etc/udev/rules.d/52-airspyhf.rules</code> to contain:
+<blockquote>
+<code>ATTR{idVendor}=="03eb", ATTR{idProduct}=="800c", SYMLINK+="airspyhf-%k",
+MODE="660", GROUP="plugdev"</code>
+</blockquote>
+The device will now be available to all users in the the <code>plugdev</code>
+group.  After adding yourself to this group and rebooting (or reloading udev), 
+you should be able to see the Airspy as a non-root user.
+</p>
+<br>
+<hr>
+<a href="index.html">
+<img src="../imgs/buttons/lbuttongr.png" alt="Back" style="vertical-align:middle"></a>   Back
+<hr>
+&copy; 2022 <a href="http://mkukla.net">Matthew Kukla</a> K3JMK
+</html>
