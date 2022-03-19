@@ -6,10 +6,17 @@
         <link>https://mkukla.net</link>
         <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
     <item>
+        <title>Airspy page updated</title>
+        <description>AirspyHF+ page updated.</description>
+        <link>https://mkukla.net/K3JMK/airspyhf-linux.html</link>
+        <pubdate>Fri, 19 Mar 2022 03:00:00 GMT</pubdate>
+    </item>
+    <item>
         <title>RSS</title>
         <description>RSS feed added to site.</description>
         <link>https://mkukla.net/rss.xml</link>
         <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
     </item>
+
     </channel>
 </rss>
