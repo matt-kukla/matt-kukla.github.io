@@ -1,22 +1,24 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
-    <channel>
+<channel>
         <title>mkukla.net</title>
         <description>mkukla.net</description>
         <link>https://mkukla.net</link>
-        <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
+    <item>
+        <title>Update to ``Colored Convex Linear Orders and Logical Limit
+        Laws''</title>
+        <description>See paper.</description>
+        <link>https://mkukla.net/papers/cclo.pdf</link>
+    </item>
     <item>
         <title>Airspy page updated</title>
         <description>AirspyHF+ page updated.</description>
         <link>https://mkukla.net/K3JMK/airspyhf-linux.html</link>
-        <pubdate>Fri, 19 Mar 2022 03:00:00 GMT</pubdate>
     </item>
     <item>
         <title>RSS</title>
         <description>RSS feed added to site.</description>
         <link>https://mkukla.net/rss.xml</link>
-        <pubDate>Tue, 15 Mar 2022 02:02:23 GMT</pubDate>
     </item>
-
-    </channel>
+</channel>
 </rss>
