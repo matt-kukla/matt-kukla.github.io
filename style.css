@@ -1,8 +1,8 @@
 ul.a {
     list-style-type: none; 
     overflow: hidden; 
-    background-color: #363636;
-    border-color: #464646;
+    background-color: #464646;
+    border-color:  #565656 gray;
     border-style: outset;
     border-width: 05px;
     table-layout: fixed;
