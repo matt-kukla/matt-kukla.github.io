@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css" type="text/css">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/html; charset=utf8" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="Start" href="index.html">
 <link rel="Up" href="index.html">
@@ -170,55 +170,56 @@
 
 <pre><span id="VALnot_tern"><span class="keyword">val</span> not_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Ternary "not"</p>
+<p>Ternary negation: ¬<code class="code">U</code> = <code class="code">U</code>.</p>
 </div>
 </div>
 
 <pre><span id="VALand_tern"><span class="keyword">val</span> and_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Ternary "and"</p>
+<p>Ternary conjunction.</p>
 </div>
 </div>
 
 <pre><span id="VALand_st"><span class="keyword">val</span> and_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Strict "and"</p>
+<p>Strict conjunction: X ∧ <code class="code">U</code> = <code class="code">U</code>, for all X.</p>
 </div>
 </div>
 
 <pre><span id="VALor_tern"><span class="keyword">val</span> or_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Ternary "or"</p>
+<p>Ternary disjunction.</p>
 </div>
 </div>
 
 <pre><span id="VALor_st"><span class="keyword">val</span> or_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Strict "or"</p>
+<p>Strict conjunction: X ∨ <code class="code">U</code> = <code class="code">U</code> for all X.</p>
 </div>
 </div>
 
 <pre><span id="VALimpl_tern"><span class="keyword">val</span> impl_tern</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Regular ternary (Kleene) implication</p>
+<p>Kleene implication</p>
 </div>
 </div>
 
 <pre><span id="VALimpl_lukas"><span class="keyword">val</span> impl_lukas</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Łukasiewicz implication</p>
+<p>Łukasiewicz implication: equivalent to Kleene implication except for <code class="code">U</code> → <code class="code">U</code> =
+<code class="code">T</code>.</p>
 </div>
 </div>
 
 <pre><span id="VALimpl_st"><span class="keyword">val</span> impl_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Strict implication</p>
+<p>Strict implication: X → <code class="code">U</code> = <code class="code">U</code>, <code class="code">U</code> → X = <code class="code">U</code>.</p>
 </div>
 </div>
 
 <pre><span id="VALbicond_st"><span class="keyword">val</span> bicond_st</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a> -&gt; <a href="Tern.html#TYPEtrilean">trilean</a></code></pre><div class="info ">
 <div class="info-desc">
-<p>Strict biconditional</p>
+<p>Strict biconditional.</p>
 </div>
 </div>
 
@@ -230,14 +231,14 @@
 
 <pre><span id="VALto_bool"><span class="keyword">val</span> to_bool</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
-<p>Convert T or F to respective boolean values.  
+<p>Convert <code class="code">T</code> or <code class="code">F</code> to respective boolean values.  
 Raises <code class="code">Unknown</code> when passed <code class="code">U</code>.</p>
 </div>
 </div>
 
 <pre><span id="VALwdef"><span class="keyword">val</span> wdef</span> : <code class="type"><a href="Tern.html#TYPEtrilean">trilean</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
-<p>Well-definedness</p>
+<p>Well-definedness.</p>
 </div>
 </div>
 
