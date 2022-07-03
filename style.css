@@ -1,11 +1,13 @@
 ul.a {
-    list-style-type: none; 
+    list-style-type: none;
     overflow: hidden; 
     background-color: #464646;
     border-color:  #565656 gray;
     border-style: outset;
     border-width: 05px;
-    table-layout: fixed;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
   
 li a.active{
