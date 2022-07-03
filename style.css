@@ -1,22 +1,31 @@
-ul.a {
+/*
+    Main stylesheet.
+    2022 Matt Kukla
+*/
+nav { text-align: center; }
+
+nav ul {
     list-style-type: none;
     overflow: hidden; 
     background-color: #464646;
     border-color:  #565656 gray;
     border-style: outset;
     border-width: 05px;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+    list-style: none;
+    width: 100%;
+    margin-right: 5px;
 }
   
-li a.active{
+nav li{
     color: white; 
     padding: 05px 55px;
     text-decoration: none;
-    float: left;
+    display:inline-block;
 }
 
-h1 {
-    text-align:center;
-}
+nav a { color:white; text-decoration: none; }
+
+h1 { text-align:center;}
