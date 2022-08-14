@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css" type="text/css">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="Start" href="index.html">
 <link rel="Up" href="index.html">
@@ -175,21 +175,27 @@
 
 
 
-<pre><span id="VALfmla_as_string"><span class="keyword">val</span> fmla_as_string</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> string</code></pre><div class="info ">
+<pre><span id="VALfmla_as_string"><span class="keyword">val</span> fmla_as_string</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -&gt; string</code></pre><div class="info ">
 <div class="info-desc">
 <p>Represent formula as string.</p>
 </div>
 </div>
 
-<pre><span id="VALto_atomics"><span class="keyword">val</span> to_atomics</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> <a href="Ltl.html#TYPEexpr">expr</a></code></pre><div class="info ">
+<pre><span id="VALto_atomics"><span class="keyword">val</span> to_atomics</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -&gt; <a href="Ltl.html#TYPEexpr">expr</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Rewrite formula to use only atomic connectives/modal operators.</p>
 </div>
 </div>
 
-<pre><span id="VALeval_fmla"><span class="keyword">val</span> eval_fmla</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -> (string * bool) list list -> bool</code></pre><div class="info ">
+<pre><span id="VALeval_fmla"><span class="keyword">val</span> eval_fmla</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -&gt; (string * bool) list list -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Evaluate formula over path.</p>
+</div>
+</div>
+
+<pre><span id="VALmodal_depth"><span class="keyword">val</span> modal_depth</span> : <code class="type"><a href="Ltl.html#TYPEexpr">expr</a> -&gt; int</code></pre><div class="info ">
+<div class="info-desc">
+<p>Calculate maximum depth of nested modalities in a formula.</p>
 </div>
 </div>
 </body></html>
