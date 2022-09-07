@@ -10,15 +10,15 @@ ul.a {
     border-style: outset;
     border-width: 05px;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
 }
   
 li a.active{
     color: white; 
-    padding: 05px 55px;
+    padding: 05px 5%;
     text-decoration: none;
     float: left;
+    width:10%;
+    min-width:100px;
 }
 
 h1 {
