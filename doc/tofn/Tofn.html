@@ -117,19 +117,19 @@ an element of <code class="code">float * float * float * float</code>) for ease-
 </div>
 
 
-<pre><span id="VALsametype"><span class="keyword">val</span> sametype</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> bool</code></pre><div class="info ">
+<pre><span id="VALsametype"><span class="keyword">val</span> sametype</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Determine if two given OFNs are of the same type.</p>
 </div>
 </div>
 
-<pre><span id="VALtuplemap"><span class="keyword">val</span> tuplemap</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VALtuplemap"><span class="keyword">val</span> tuplemap</span> : <code class="type">(float -&gt; float -&gt; float) -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Apply a binary operator to the essential tuples of two OFNs.</p>
 </div>
 </div>
 
-<pre><span id="VALtuplemap_safe"><span class="keyword">val</span> tuplemap_safe</span> : <code class="type">(float -> float -> float) -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VALtuplemap_safe"><span class="keyword">val</span> tuplemap_safe</span> : <code class="type">(float -&gt; float -&gt; float) -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Apply a binary operator to the essential tuples of two OFNs only when the
 types match.  Raises <code class="code">OFN_type_mistmatch</code> if arguments are not of the same
@@ -137,56 +137,62 @@ type.</p>
 </div>
 </div>
 
-<pre><span id="VAL(|+|)"><span class="keyword">val</span> (|+|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VALinv"><span class="keyword">val</span> inv</span> : <code class="type"><a href="Tofn.html#TYPEfamily">family</a> -&gt; float -&gt; float</code></pre><div class="info ">
+<div class="info-desc">
+<p>Inverses of base functions</p>
+</div>
+</div>
+
+<pre><span id="VAL(|+|)"><span class="keyword">val</span> (|+|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>OFN addition.</p>
 </div>
 </div>
 
-<pre><span id="VAL(|-|)"><span class="keyword">val</span> (|-|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VAL(|-|)"><span class="keyword">val</span> (|-|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>OFN subtraction.</p>
 </div>
 </div>
 
-<pre><span id="VAL(|*|)"><span class="keyword">val</span> (|*|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VAL(|*|)"><span class="keyword">val</span> (|*|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>OFN multiplication.</p>
 </div>
 </div>
 
-<pre><span id="VAL(|/|)"><span class="keyword">val</span> (|/|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VAL(|/|)"><span class="keyword">val</span> (|/|)</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>OFN division</p>
 </div>
 </div>
 
-<pre><span id="VALis_proper"><span class="keyword">val</span> is_proper</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> bool</code></pre><div class="info ">
-<div class="info-desc">
-<p>Check if an OFN is proper.</p>
-</div>
-</div>
-
-<pre><span id="VALis_increasing"><span class="keyword">val</span> is_increasing</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> bool</code></pre><div class="info ">
+<pre><span id="VALis_increasing"><span class="keyword">val</span> is_increasing</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Determine if an OFN is increasing.</p>
 </div>
 </div>
 
-<pre><span id="VALis_decreasing"><span class="keyword">val</span> is_decreasing</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> bool</code></pre><div class="info ">
+<pre><span id="VALis_decreasing"><span class="keyword">val</span> is_decreasing</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; bool</code></pre><div class="info ">
 <div class="info-desc">
 <p>Determine if an OFN is decreasing.</p>
 </div>
 </div>
 
-<pre><span id="VALmembership"><span class="keyword">val</span> membership</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> float -> float</code></pre><div class="info ">
+<pre><span id="VALis_proper"><span class="keyword">val</span> is_proper</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Check if an OFN is proper.</p>
+</div>
+</div>
+
+<pre><span id="VALmembership"><span class="keyword">val</span> membership</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; float -&gt; float</code></pre><div class="info ">
 <div class="info-desc">
 <p>The membership function associated to an OFN.  Raises <code class="code">Improper_OFN</code> if the OFN 
 is improper.</p>
 </div>
 </div>
 
-<pre><span id="VALconv_ofn"><span class="keyword">val</span> conv_ofn</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -> <a href="Tofn.html#TYPEfamily">family</a> -> <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
+<pre><span id="VALconv_ofn"><span class="keyword">val</span> conv_ofn</span> : <code class="type"><a href="Tofn.html#TYPEtofn">tofn</a> -&gt; <a href="Tofn.html#TYPEfamily">family</a> -&gt; <a href="Tofn.html#TYPEtofn">tofn</a></code></pre><div class="info ">
 <div class="info-desc">
 <p>Convert an OFN of one type to another type.</p>
 </div>
