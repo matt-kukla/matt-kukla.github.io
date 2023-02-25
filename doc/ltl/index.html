@@ -1,32 +1,99 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="Start" href="index.html">
-<link title="Index of types" rel=Appendix href="index_types.html">
-<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
-<link title="Index of values" rel=Appendix href="index_values.html">
-<link title="Index of modules" rel=Appendix href="index_modules.html">
-<link title="Ltl" rel="Chapter" href="Ltl.html"><title></title>
-</head>
-<body>
-<div class = "index-list">
-<ul class="indexlist">
-<li><a href="index_types.html">Index of types</a></li>
-<li><a href="index_exceptions.html">Index of exceptions</a></li>
-<li><a href="index_values.html">Index of values</a></li>
-<li><a href="index_modules.html">Index of modules</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+<title>ltl</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p style="text-align:center;">
+<img src="ltl.svg" alt="LTL logo" style="text-align:center; max-width: 100%;">
+</p>
+<style>
+li{
+    margin:10px 0;
+}
+</style>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+<hr>
+<a><h2>Introduction</h2></a>
+Linear temporal logic in OCaml.
+
+<h3>Overview - syntax and semantics</h3>
+<p>
+Linear temporal logic extends propositional logic to describe truth over linear
+time paths.
+<br><br>Formulas are given by the following grammar:
+
+$$\varphi ::= \top \mid  v \mid \neg \psi \mid \psi_1 \wedge \psi_2  \mid
+\bigcirc \psi \mid \psi_1 \mathrel{\mathcal{U}} \psi_2 $$
+
+where $v$ denotes a propositional variable.  We interpret $\bigcirc \varphi$ as 
+"$\varphi$ holds in the next state" and $\psi_1
+\mathrel{\mathcal{U}} \psi_2$ as "$\psi_1$ holds until $\psi_2$ is true."
+<br><br>
+Additional operators, connectives, and terms are derived from those above:
+<ul>
+<li>$\bot := \neg \top$</li>
+<li>$\varphi \vee \psi := \neg(\neg \varphi \wedge \psi)$</li>
+<li>$\varphi \implies \psi := \neg \varphi \vee \psi$</li>
+<li>$\varphi \iff \psi := (\varphi \implies \psi) \wedge (\psi \implies
+  \varphi)$</li>
+<li>$\lozenge \varphi := \top \mathrel{\mathcal{U}} \varphi$ ("Eventually":
+there exists a state in which $\varphi$ is true) </li>
+<li>$\square \varphi \equiv \neg \lozenge \neg \varphi$ ("Globally": $\varphi$
+holds in all states)</li>
+<li>$\varphi \mathrel{\mathcal{W}} \psi := \psi
+\mathrel{\mathcal{U}}(\varphi \vee \lozenge \psi)$ ("Weak until")</li>
+<li>$\varphi \mathrel{\mathcal{R}} \psi := \neg(\neg \varphi
+\mathrel{\mathcal{U}} \neg \psi)$ ("Release")</li>
+<li>$\varphi \mathrel{\mathcal{M}} \psi := \varphi
+\mathrel{\mathcal{W}} (\varphi \wedge \psi)$ ("Strong release")</li>  
 </ul>
-</div>
 
-<table class="indextable module-list">
-<tr><td class="module"><a href="Ltl.html">Ltl</a></td><td><div class="info">
-<p>Linear temporal logic</p>
+<p>
+Formulas are evaluated over a <i>trace</i> &mdash; this is a possibly infinite 
+sequence of propositional valuations. Each valuation is a 
+<i>state</i>.  Values in a trace's first state refer to the "start" or 
+present moment.
+<br><br>
+For a trace $\Sigma = \{ \Sigma_i \}_{i \in I}$, denote by $\Sigma^j := \{
+\Sigma_i\}_{i \in I, i \geq j}$ the subtrace containing  all states from 
+$\Sigma_j$ onwards.  A trace's length is denoted $\left | \Sigma \right
+|$.
+</p>
 
-</div>
-</td></tr>
-</table>
-</body>
+<p>
+Truth of a formula over $\Sigma$ is determined via the following:
+<ul>
+<li>$\Sigma \models \top$</li>
+<li>$\Sigma \nvDash \bot$</li>
+<li>$\Sigma \models v$ iff $v = \top$ in $\Sigma_0$</li>
+<li>$\Sigma \models \varphi \wedge \psi$ iff $\Sigma_0 \models \varphi$ and
+  $\Sigma_0 \models \psi$</li>                     
+<li>$\Sigma \models \varphi \vee \psi$ iff $\Sigma_0 \models \varphi$ or
+    $\Sigma_0 \models \psi$</li>
+<li>$\Sigma \models \bigcirc \varphi$ iff $\Sigma_1 \models \varphi$  or if
+      $\left |\Sigma \right |=1$ with $\Sigma_0 \models \varphi$</li>
+<li>$\Sigma \models \square \varphi$ iff $\Sigma_j \models \varphi$ for all $j \in I$</li> 
+<li>$\Sigma \models \varphi \mathrel{\mathcal{U}} \psi$ iff there exists $0 \leq
+i \leq |\Sigma|$ with $\Sigma^i \models \psi$ and $\Sigma^j \models \varphi$ for
+all $0 \leq j \leq i$</li>
+</ul>
+
+Under this definition, a formula containing no modal operators is equivalent to an 
+ordinary propositional formula taking values in the current state.
+
+<a id="ocamldoc"><h2>Documentation</h2></a>
+Module documentation is located <a href="ocamldoc/Ltl.html">here</a>.
+<h2>Build and Installation</h2>
+Clone the repository from <a
+href="https://github.com/matt-kukla/ltl">GitHub</a>.  Building LTL with <a
+href="https://dune.build">dune</a> is straightforward: run <code>dune build</code> to
+compile, and <code>dune install</code> to install.
+<h2>Development</h2>
+The source code is available on <a href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL is free software under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.  You are
+free to copy, modify, and distribute LTL under the terms of this license.
+<hr>
+Copyright &copy; 2023 <a href="http://mkukla.net">Matthew Kukla</a>
+&#60;matt.kukla [at] yandex.ru&#62;.
 </html>
