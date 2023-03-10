@@ -38,9 +38,9 @@ Additional operators, connectives, and terms are derived from those above:
 <li>$\varphi \implies \psi := \neg \varphi \vee \psi$</li>
 <li>$\varphi \iff \psi := (\varphi \implies \psi) \wedge (\psi \implies
   \varphi)$</li>
-<li>$\lozenge \varphi := \top \mathrel{\mathcal{U}} \varphi$ ("Eventually":
+<li>$\lozenge \varphi := \top \mathrel{\mathcal{U}} \varphi$ ("Eventual truth":
 there exists a state in which $\varphi$ is true) </li>
-<li>$\square \varphi \equiv \neg \lozenge \neg \varphi$ ("Globally": $\varphi$
+<li>$\square \varphi \equiv \neg \lozenge \neg \varphi$ ("Global truth": $\varphi$
 holds in all states)</li>
 <li>$\varphi \mathrel{\mathcal{W}} \psi := \psi
 \mathrel{\mathcal{U}}(\varphi \vee \lozenge \psi)$ ("Weak until")</li>
@@ -53,7 +53,7 @@ holds in all states)</li>
 <p>
 Formulas are evaluated over a <i>trace</i> &mdash; this is a possibly infinite 
 sequence of propositional valuations. Each valuation is a 
-<i>state</i>.  Values in a trace's first state refer to the "start" or 
+<i>state</i>.  A trace's first state refer to the "start" or 
 present moment.
 <br><br>
 For a trace $\Sigma = \{ \Sigma_i \}_{i \in I}$, denote by $\Sigma^j := \{
@@ -87,12 +87,13 @@ ordinary propositional formula taking values in the current state.
 Module documentation is located <a href="ocamldoc/Ltl.html">here</a>.
 <h2>Build and Installation</h2>
 Clone the repository from <a
-href="https://github.com/matt-kukla/ltl">GitHub</a>.  Building LTL with <a
-href="https://dune.build">dune</a> is straightforward: run <code>dune build</code> to
+href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL can be built with <a href="https://dune.build">dune</a>: run <code>dune build</code> to
 compile, and <code>dune install</code> to install.
 <h2>Development</h2>
-The source code is available on <a href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL is free software under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.  You are
+Source code is available on <a href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL is free software under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.  You are
 free to copy, modify, and distribute LTL under the terms of this license.
+<hr>
+<a href="../../sundry.html">Back</a> | <a href=<"../../index.html">Home</a>
 <hr>
 Copyright &copy; 2023 <a href="http://mkukla.net">Matthew Kukla</a>
 &#60;matt.kukla [at] yandex.ru&#62;.

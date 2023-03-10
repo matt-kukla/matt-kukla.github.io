@@ -42,7 +42,7 @@ straightforward to configure udev.
 <code>ATTR{idVendor}=="03eb", ATTR{idProduct}=="800c", SYMLINK+="airspyhf-%k",
 MODE="660", GROUP="plugdev"</code>
 </blockquote>
-The device will now be available to all users in the the <code>plugdev</code>
+The device will now be available to all users in the <code>plugdev</code>
 group.  After adding yourself to this group and rebooting (or reloading udev), 
 you should be able to see the Airspy as a non-root user.
 </p>
