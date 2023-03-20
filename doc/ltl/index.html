@@ -27,11 +27,11 @@ time paths.
 $$\varphi ::= \top \mid  v \mid \neg \psi \mid \psi_1 \wedge \psi_2  \mid
 \bigcirc \psi \mid \psi_1 \mathrel{\mathcal{U}} \psi_2 $$
 
-where $v$ denotes a propositional variable.  We interpret $\bigcirc \varphi$ as 
+where $v$ is a propositional variable.  We interpret $\bigcirc \varphi$ as 
 "$\varphi$ holds in the next state" and $\psi_1
 \mathrel{\mathcal{U}} \psi_2$ as "$\psi_1$ holds until $\psi_2$ is true."
 <br><br>
-Additional operators, connectives, and terms are derived from those above:
+Additional connectives, operators, and terms are derived from those above:
 <ul>
 <li>$\bot := \neg \top$</li>
 <li>$\varphi \vee \psi := \neg(\neg \varphi \wedge \psi)$</li>
@@ -53,8 +53,8 @@ holds in all states)</li>
 <p>
 Formulas are evaluated over a <i>trace</i> &mdash; this is a possibly infinite 
 sequence of propositional valuations. Each valuation is a 
-<i>state</i>.  A trace's first state refer to the "start" or 
-present moment.
+<i>state</i>.  The first state of a trace refers to the "start" or present
+moment.
 <br><br>
 For a trace $\Sigma = \{ \Sigma_i \}_{i \in I}$, denote by $\Sigma^j := \{
 \Sigma_i\}_{i \in I, i \geq j}$ the subtrace containing  all states from 
@@ -63,7 +63,8 @@ $\Sigma_j$ onwards.  A trace's length is denoted $\left | \Sigma \right
 </p>
 
 <p>
-Truth of a formula over $\Sigma$ is determined via the following:
+Truth of a formula $\varphi$ is evaluated inductively via the satisfaction
+relation $\models$, defined as follows:
 <ul>
 <li>$\Sigma \models \top$</li>
 <li>$\Sigma \nvDash \bot$</li>
