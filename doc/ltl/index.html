@@ -15,10 +15,10 @@ li{
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <hr>
-<a><h2>Introduction</h2></a>
+<a><h1>Introduction</h1></a>
 Linear temporal logic in OCaml.
 
-<h3>Overview - syntax and semantics</h3>
+<h2>Syntax and semantics</h2>
 <p>
 Linear temporal logic extends propositional logic to describe truth over linear
 time paths.
@@ -84,15 +84,22 @@ all $0 \leq j \leq i$</li>
 Under this definition, a formula containing no modal operators is equivalent to an 
 ordinary propositional formula taking values in the current state.
 
-<a id="ocamldoc"><h2>Documentation</h2></a>
+A more detailed description of semantics for traces of infinite length 
+may be found in [<a href="#refs">1</a>].
+
+<a id="ocamldoc"><h1>Documentation</h1></a>
 Module documentation is located <a href="ocamldoc/Ltl.html">here</a>.
-<h2>Build and Installation</h2>
+<h1>Build and Installation</h1>
 Clone the repository from <a
 href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL can be built with <a href="https://dune.build">dune</a>: run <code>dune build</code> to
 compile, and <code>dune install</code> to install.
-<h2>Development</h2>
+<h1>Development</h1>
 Source code is available on <a href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL is free software under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.  You are
 free to copy, modify, and distribute LTL under the terms of this license.
+<a id="refs"><h2>References</h2></a>
+[1] A. Pnueli, "The temporal logic of programs," <i>18th Annual Symposium 
+on Foundations of Computer Science (sfcs 1977)</i>, Providence, RI, USA, 1977,
+pp. 46-57, doi: <a href="https://ieeexplore.ieee.org/document/4567924">10.1109/SFCS.1977.32</a>.
 <hr>
 <a href="../../sundry.html">Back</a> | <a href=<"../../index.html">Home</a>
 <hr>
