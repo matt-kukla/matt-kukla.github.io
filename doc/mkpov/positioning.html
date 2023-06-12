@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <title>positioning.inc</title>
 <link rel="stylesheet" href="pstyle.css">
 <h1>positioning.inc</h1>
@@ -47,14 +47,23 @@ in a row, starting at point <code>Start</code> and spaced apart by vector
 <img src="samples/row2.png" alt="Another row example">
 <figcaption><code>Row(S, <-3, 0, 2>, 4, <2, 0.5, 1>)</code></figcaption>
 </figure>
-
 </dd>
+Rows may be iterated to produce more complex objects.  For example:
+<figure>                                                                   
+<img src="samples/rlayer1.png" alt="A row">                     
+<figcaption><code>#declare R = Row(X, <-1, 0, 0.5>, 3, 1.25*z)</code></figcaption> 
+<img src="samples/rlayer2.png" alt="Grid of spheres">                   
+<figcaption><code>#declare R2 = Row(R, <-3, 0, 2>, 3, <1.25,0,0>)</code></figcaption>
+<img src="samples/rlayer3.png" alt="Layered grids of spheres">
+<figcaption><code>#declare R3 = Row(R2, <0, 0.5, 0>, 3, <0, 1.25, 0>)
+</code></figcaption>
+</figure>
 </p>
 <hr>
 <p>
 <code>Row_SR(Ob, Start, N, Space, R, S)</code>:<dd>Same as <code>Row(Ob, Start, N,
   Space)</code> but with the <code>K</code>th copy of <code>Ob</code> scaled by
-<code>1+S*K</code> and rotated by <code>R*K<code> for each 0,...,<code>K</code>.
+<code>1+S*K</code> and rotated by <code>R*K</code> for each 0,...,<code>K</code>.
 
 <figure>
 <img src="samples/row_sr.png" alt="Row_SR example">
