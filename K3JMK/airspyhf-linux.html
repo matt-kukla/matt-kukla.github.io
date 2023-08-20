@@ -9,7 +9,7 @@ rules correctly, which results in the device being visible only with root
 privileges.
 </p>
 <p>
-Check first that the Airspy is visible as root.  Two simple ways
+Check first that the Airspy is visible as root.  There are two simple ways
 to do this:
 <ul>
     <li>Run your SDR application of choice as root, and see if the device
@@ -22,7 +22,7 @@ to do this:
     <blockquote><code>
     AirSpy HF library version: 1.6.8<br><br>
 
-    S/N: 0xC85297808AB42583<br>
+    S/N: &ltserial number&gt <br>
     Part ID: 0x00000002<br>
     Firmware Version: R3.0.7-CD<br>
     Available sample rates: 912 kS/s 768 kS/s 456 kS/s
@@ -32,7 +32,8 @@ to do this:
     </blockquote></li>
 
 </ul>
-If neither of the above work, there may be a larger issue at hand.  Check dmesg to see if the Airspy is detected at all.
+If neither of the above work, there may be a larger issue at hand.  Try looking
+at dmesg to see if the Airspy is detected at all.
 </p>
 <p>
 After verifying that the device is actually visible as root, it is fairly
@@ -44,7 +45,7 @@ MODE="660", GROUP="plugdev"</code>
 </blockquote>
 The device will now be available to all users in the <code>plugdev</code>
 group.  After adding yourself to this group and rebooting (or reloading udev), 
-you should be able to see the Airspy as a non-root user.
+you should be able to access the Airspy as a non-root user.
 </p>
 <br>
 <hr>
