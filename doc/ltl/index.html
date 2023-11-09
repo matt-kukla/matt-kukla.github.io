@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8"/>
+<meta charset="utf-8">
 <title>ltl</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>                                                                    
+li{                                                                        
+    margin:10px 0;                                                         
+}                                                                   
+</style>
 <p style="text-align:center;">
 <img src="ltl.svg" alt="LTL logo" style="text-align:center; max-width: 100%;">
 </p>
-<style>
-li{
-    margin:10px 0;
-}
-</style>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <hr>
-<a><h1>Introduction</h1></a>
+<a><h2>Introduction</h2></a>
 Linear temporal logic over finite and infinite traces, implemented in OCaml.
 
 <h2>Syntax and semantics</h2>
@@ -89,22 +89,29 @@ ordinary propositional formula taking values in the current state.
 See [<a href="#refs">1</a>] for the original definition of linear temporal
 logic, along with details of applications and examples.
 
-<a id="ocamldoc"><h1>Documentation</h1></a>
+<a id="ocamldoc"><h2>Documentation</h2></a>
 Module documentation is located <a href="ocamldoc/Ltl.html">here</a>.
-<h1>Build and Installation</h1>
+<h2>Build and Installation</h2>
 Clone the repository from <a
 href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL can be built with <a href="https://dune.build">dune</a>: run <code>dune build</code> to
 compile, and <code>dune install</code> to install.
-<h1>Development</h1>
+<h2>Development</h2>
 Source code is available on <a href="https://github.com/matt-kukla/ltl">GitHub</a>.  LTL is free software under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.  You are
 free to copy, modify, and distribute LTL under the terms of this license.
 <a id="refs"><h2>References</h2></a>
 [1] A. Pnueli, "The temporal logic of programs," <i>18th Annual Symposium 
 on Foundations of Computer Science (sfcs 1977)</i>, Providence, RI, USA, 1977,
 pp. 46-57, doi: <a href="https://ieeexplore.ieee.org/document/4567924">10.1109/SFCS.1977.32</a>.
+<br><br>
+&emsp; Back
+
+<div>&emsp;                                                                
+<a href="../../sundry.html">
+<img src="../../imgs/buttons/back.gif" alt="Back to index"></a>            
+</div> 
 <hr>
-<a href="../../sundry.html">Back</a> | <a href=<"../../index.html">Home</a>
-<hr>
-Copyright &copy; 2023 <a href="http://mkukla.net">Matthew Kukla</a>
-&#60;matt.kukla [at] yandex.com&#62;.
+<span style="float:right;">                                                
+&copy; 2023 <a href="http://mkukla.net">Matthew Kukla</a>                  
+&#60;<a href="mailto:matt.kukla@yandex.com">matt.kukla@yandex.com</a>&#62;
+</span>
 </html>
