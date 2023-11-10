@@ -5,6 +5,13 @@
         <description>Matt Kukla's personal webpage</description>
         <link>https://mkukla.net</link>
     <item>
+        <title>Updated PGP key</title>
+        <description>
+            My PGP key has been updated. 
+        </description>
+        <link>https://mkukla.net/key_mkukla.txt</link>
+    </item>
+    <item>
         <title>Remove link to UMD webpage</title>
         <description>UMD hosting deactivated following graduation.</description>
         <link>https://mkukla.net</link>
