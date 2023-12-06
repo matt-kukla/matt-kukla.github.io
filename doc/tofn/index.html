@@ -8,7 +8,6 @@
 <hr>
 <p>Typed ordered fuzzy numbers and arithmetic operations, implemented in
 OCaml.</p>
-<h2 id="introduction">Introduction</h2>
 <p>Arithmetic operations on fuzzy numbers are traditionally carried out
 via interval-based methods. However, these operations are prone to
 accumulating uncertainty, which presents issues in situations where many
@@ -16,10 +15,10 @@ operations are performed in succession (e.g fuzzy autoregressive models,
 aggregations).</p>
 <p>Ordered fuzzy numbers (OFNs) remedy this issue by augmenting fuzzy
 numbers with a notion of <em>orientation</em> or <em>trend</em>. This
-yields arithmetic operations with unique additive inverses, allowing
-accumulated uncertainty to be reversed without introducing further
-approximations. Orientation has also proven extremely useful for
-modeling temporal data.</p>
+gives arithmetic operations with unique additive inverses, allowing
+accumulated uncertainty to be reversed. Orientation has also proven
+useful for modeling <a href="https://arxiv.org/abs/2011.01980">temporal
+data</a>.</p>
 <p>Typed ordered fuzzy numbers (TOFNs) are OFNS constructed from
 functions of a common family or <em>type</em>. Arithmetic operations
 between TOFNs are intended to preserve both the type and (fuzzy)
@@ -28,7 +27,7 @@ set-theoretic properties of their operands.</p>
 of imprecision control, may be found in <em><a
 href="https://arxiv.org/abs/2010.07764">Rings of Typed Ordered Fuzzy
 Numbers</a></em>. This library implements several common families of
-TOFNs and their associated arithemetic operations.</p>
+TOFNs and associated arithemetic operations.</p>
 <h2 id="installation">Installation</h2>
 <p>To build/install the contents of this repository locally, run
 <code>dune build</code>, followed by <code>dune install</code>.</p>
