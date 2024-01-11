@@ -10,25 +10,24 @@ radius 0.5, and <code>C</code> is a cube of length 0.4.
 </p>
 <hr>
 <p>
-<code>N_roots(N, R, Ob)</code>:<dd> Constructs a union containing copies of 
-object <code>Ob</code> at each <code>N</code>th root of unity in the xz-plane, 
-at distance <code>R</code> from 0.
+<code>RotSpace(N, R, Ob)</code>:<dd> Constructs a union containing <code>N</code>
+copies of object <code>Ob</code>  at evenly spaced angles in a circle
+of radius <code>R</code>.
 
 <figure>
-<img src="samples/nroot.png" alt="N_roots example">
-<figcaption><code>N_roots(8,2,S)</code></figcaption>
+<img src="samples/rotspace.png" alt="RotSpace example">
+<figcaption><code>RotSpace(5,2,S)</code></figcaption>
 </figure>
 </dd>
 </p>
 <hr>
 <p>
-<code>N_roots_SR(N, R, Ob, Sc, Rt)</code>:<dd>Same as <code>N_roots(N, R,
-Ob)</code>, with the <code>K</code>th copy of <code>Ob</code> scaled by
-<code>1+Sc*K</code> and rotated by <code>Rt*K</code> for each 0,...,<code>K</code>.
+<code>RotSpace_SR(N, R, Ob, Sc, Rt)</code>:<dd>Same as <code>RotSpace(N, R, Ob</code>, with the <code>K</code>th copy of <code>Ob</code> scaled by
+<code>1+Sc*K</code> and rotated by <code>Rt*K</code> for each <code>K</code> in <code>0,...,<code>N</code>.
 
 <figure>
-<img src="samples/nroot_sr.png" alt="N_roots_SR example">
-<figcaption><code>N_roots_SR(8, 2, C, 0, 45*y)</code></figcaption>
+<img src="samples/rotspace_sr.png" alt="RotSpace_SR example">
+<figcaption><code>RotSpace_SR(3, 2, C, 0.25, 25*z)
 </figure>
 </dd>
 </p>
