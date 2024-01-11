@@ -5,6 +5,12 @@
         <description>Matt Kukla's personal webpage</description>
         <link>https://mkukla.net</link>
     <item>
+        <title>Updated MKPOV documentation</title>
+        <description>The positioning macros in MKPOV have been changed.
+        </description>
+        <link>https://mkukla.net/doc/mkpov/positioning.html</link>
+    </item>
+    <item>
         <title>Updated PGP key</title>
         <description>
             My PGP key has been updated. 
