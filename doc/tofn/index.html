@@ -9,13 +9,13 @@
 <p>Typed ordered fuzzy numbers and arithmetic operations, implemented in
 OCaml.</p>
 <p>Arithmetic operations on fuzzy numbers are traditionally carried out
-via interval-based methods. However, these operations are prone to
-accumulating uncertainty, which presents issues in situations where many
+via interval-based methods. However, these are prone to
+accumulating uncertainty, presenting issues when many
 operations are performed in succession (e.g fuzzy autoregressive models,
 aggregations).</p>
 <p>Ordered fuzzy numbers (OFNs) remedy this issue by augmenting fuzzy
 numbers with a notion of <em>orientation</em> or <em>trend</em>. This
-gives arithmetic operations with unique additive inverses, allowing
+yields arithmetic operations with unique additive inverses, allowing
 accumulated uncertainty to be reversed. Orientation has also proven
 useful for modeling <a href="https://arxiv.org/abs/2011.01980">temporal
 data</a>.</p>
