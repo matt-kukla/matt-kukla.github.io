@@ -10,20 +10,28 @@ body {
     background-repeat: repeat; 
 }
 img { 
+    width:100%;
+    display:block;
 }
 table {
     max-width:400px;
+    table-layout:fixed;
+    background-color: #bebebe;
+    margin:auto;
 }
-a,td {
+a,td,tr {
     font-size:18.5px;
     margin-top:5px;
+    max-width:400px;
 }
 h2 {
     margin-top:4px;
     margin-bottom:4px;
 }
 </style>
-<table border=5 style="margin:auto; background-color:#bebebe; width:400px">
+<!--<table border=5 style="margin:auto; background-color:#bebebe;
+width:400px">-->
+<table border=5>
 <tr><td><img src="../imgs/3d/400x300/GFX.PNG" alt="Graphics"></td></tr>
 </table>
 <p>
@@ -73,5 +81,5 @@ h2 {
 <hr>
 <br>
 <a href="../index.html"><img src="../imgs/buttons/back.gif" alt="Home"
-style="border:none; float:left;"></a> <br>
+style="border:none; float:left; max-width:32px;"></a> <br>
 </html>
