@@ -9,19 +9,18 @@
 <p>Typed ordered fuzzy numbers and arithmetic operations, implemented in
 OCaml.</p>
 <p>Arithmetic operations on fuzzy numbers are traditionally carried out
-via interval-based methods. However, these are prone to
-accumulating uncertainty, presenting issues when many
-operations are performed in succession (e.g fuzzy autoregressive models,
-aggregations).</p>
-<p>Ordered fuzzy numbers (OFNs) remedy this issue by augmenting fuzzy
-numbers with a notion of <em>orientation</em> or <em>trend</em>. This
-yields arithmetic operations with unique additive inverses, allowing
-accumulated uncertainty to be reversed. Orientation has also proven
-useful for modeling <a href="https://arxiv.org/abs/2011.01980">temporal
+via interval-based methods. However, such approaches are prone to
+accumulating uncertainty, which presents issues when large numbers of
+operations are performed in succession (as with fuzzy autoregressive models,
+aggregations).  Ordered fuzzy numbers (OFNs) remedy this issue by augmenting fuzzy
+numbers with a notion of <em>orientation</em> or <em>trend</em>. We obtain
+arithmetic operations with unique additive inverses, allowing
+for better management of accumulated uncertainty. Orientation has also 
+proven useful for modeling <a href="https://arxiv.org/abs/2011.01980">temporal
 data</a>.</p>
 <p>Typed ordered fuzzy numbers (TOFNs) are OFNS constructed from
 functions of a common family or <em>type</em>. Arithmetic operations
-between TOFNs are intended to preserve both the type and (fuzzy)
+between TOFNs are preserve both type and (fuzzy)
 set-theoretic properties of their operands.</p>
 <p>The general theory and construction of TOFNs, along with a discussion
 of imprecision control, may be found in <em><a
@@ -29,7 +28,7 @@ href="https://arxiv.org/abs/2010.07764">Rings of Typed Ordered Fuzzy
 Numbers</a></em>. This library implements several common families of
 TOFNs and associated arithemetic operations.</p>
 <h2 id="installation">Installation</h2>
-<p>To build/install the contents of this repository locally, run
+<p>To build/install TOFN locally, run
 <code>dune build</code>, followed by <code>dune install</code>.</p>
 <p>This package may also be installed with opam:
 <code>opam install tofn</code></p>
