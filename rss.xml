@@ -5,6 +5,14 @@
         <description>Matt Kukla's personal webpage</description>
         <link>https://mkukla.net</link>
     <item>
+        <title>Add talk slides: "First-Order Logical Limit Laws, Ordered
+        Structures, and Permutation Classes"</title>
+        <description>Update limit law slides to include recent talk at
+        GW.</description>
+        <link>First-Order Logical Limit Laws, Ordered Structures, and
+        Permutation Classes</link>
+    </item>
+    <item>
         <title>Updated MKPOV documentation</title>
         <description>The positioning macros in MKPOV have been changed.
         </description>
