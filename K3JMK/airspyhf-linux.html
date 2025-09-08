@@ -44,8 +44,10 @@ straightforward to configure udev.
 MODE="660", GROUP="plugdev"</code>
 </blockquote>
 The device will now be available to all users in the <code>plugdev</code>
-group.  After adding yourself to this group and rebooting (or reloading udev), 
-you should be able to access the Airspy as a non-root user.
+group.  After adding yourself to this group, inotify should pick up the changes
+and reload everything automatically.  If not, a quick reload of udev rules will
+set everything in order (on most distributions, you can do this with
+<code>udevadm</code>).
 </p>
 <br>
 <hr>
