@@ -5,7 +5,8 @@
    viewBox="0 0 100.26538 92.357918"
    version="1.2"
    id="svg135"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="map.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,13 +28,15 @@
      fit-margin-bottom="0"
      inkscape:zoom="2.5229712"
      inkscape:cx="65.200903"
-     inkscape:cy="60.642785"
-     inkscape:window-width="1366"
-     inkscape:window-height="710"
+     inkscape:cy="155.9669"
+     inkscape:window-width="1920"
+     inkscape:window-height="1143"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="33"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg135" />
+     inkscape:current-layer="surface1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs46">
     <g
@@ -359,28 +362,6 @@
          x="157.05299"
          y="10.961"
          id="use122"
-         width="100%"
-         height="100%" />
-    </g>
-    <g
-       style="fill:#000000;fill-opacity:1"
-       id="g128">
-      <use
-         xlink:href="#glyph3-1"
-         x="170.23801"
-         y="49.151001"
-         id="use126"
-         width="100%"
-         height="100%" />
-    </g>
-    <g
-       style="fill:#000000;fill-opacity:1"
-       id="g132">
-      <use
-         xlink:href="#glyph4-1"
-         x="176.008"
-         y="50.944"
-         id="use130"
          width="100%"
          height="100%" />
     </g>
