@@ -4,240 +4,259 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 <url>
   <loc>https://mkukla.net/</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mkukla.net/index.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkukla.net/about.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkukla.net/contact.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkukla.net/writings.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkukla.net/sundry.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkukla.net/misc/cv_mkukla.pdf</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/key_mkukla.txt</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/age_mkukla.txt</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/K3JMK/</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/papers/dofs.pdf</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/papers/limlaw.pdf</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/papers/cclo.pdf</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/papers/ofn.pdf</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/math/collab.html</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/talks/act2024.pdf</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/talks/limlaw-talk.pdf</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/talks/limlaw-gw.pdf</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/LICENSE.TXT</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/arxpdf.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/cvars.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/tofn/index.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/misc/3d.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/index.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/imgs/buttons/</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/imgs/tiles/</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mkukla.net/misc/mathpuns.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mkukla.net/misc/birds.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mkukla.net/misc/soviet-starlings.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/K3JMK/airspyhf-linux.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
-  <priority>0.51</priority>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/misc/mathpuns.html</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/misc/birds.html</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mkukla.net/misc/soviet-starlings.html</loc>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/8.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/7.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/6.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/5.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/4.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/3.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/2.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/1.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/fructose.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/software.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/forms.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/entropy.html</loc>
-  <lastmod>2024-11-30T20:32:12+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/mknormals.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/mkskies.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/mkstones.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/mkstones1.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/mktextures.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/doc/mkpov/positioning.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/K3JMK/index.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
-  <priority>0.41</priority>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mkukla.net/3d/index.html</loc>
-  <lastmod>2024-11-30T20:32:11+00:00</lastmod>
+  <lastmod>2025-10-01T14:17:27+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 
