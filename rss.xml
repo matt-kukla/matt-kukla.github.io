@@ -5,6 +5,28 @@
         <description>Matt Kukla's personal webpage</description>
         <link>https://mkukla.net</link>
     <item>
+        <title>New preprint: ``Double Orthogonal Factorization Systems''</title>
+        <description>Abstract: We define strict and lax orthogonal factorization
+        systems on double categories. These consist of an orthogonal
+        factorization system on arrows and one on double cells that are
+        compatible with each other. Our definitions are motivated by several
+        explicit examples, including factorization systems on double categories
+        of spans, relations and bimodules. We then prove monadicity results for
+        orthogonal factorization systems on double categories in order to
+        justify our definitions. For fibrant double categories we discuss the
+        structure of the double orthogonal factorization systems that have a
+        given orthogonal factorization system on the arrows in common. Finally,
+        we study the interaction of orthogonal factorization systems on double
+        categories with double fibrations. 
+        </description>
+        <link>https://mkukla.net/papers/dofs.pdf</link>
+    </item>
+    <item>
+        <title>Oxford talk slides</title>
+        <description>Added slides from ACT2024 talk at Oxford.</description>
+        <link>https://mkukla.net/talks/act2024.pdf</link>
+    </item>
+    <item>
         <title>EPA 608 Universal</title>
         <description>Added EPA 608 Universal certification to CV.</description>
         <link>https://mkukla.net/misc/cv_mkukla.pdf</link>
