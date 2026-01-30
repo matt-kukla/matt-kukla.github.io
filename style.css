@@ -1,6 +1,6 @@
 /*
     General navbar/page style
-    Last modified: 6 Sept. 2022
+    Last modified:  30 Jan. 2026
 */
 ul.a {
     list-style-type: none;
@@ -24,4 +24,8 @@ li a.active{
 
 h1 {
     text-align:center;
+}
+
+img {
+    vertical-align:middle;
 }
