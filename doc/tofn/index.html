@@ -9,14 +9,14 @@ alt="Icon of an ordered fuzzy set" style="vertical-align:top"> TOFN</h1>
 <hr>
 <p>Typed ordered fuzzy numbers and arithmetic operations, implemented in
 OCaml.</p>
-<p>Arithmetic operations on fuzzy numbers are traditionally carried out
+<p>Arithmetic operations on fuzzy numbers are traditionally defined
 via interval-based methods. However, such approaches are prone to
-accumulating uncertainty, which presents issues when large numbers of
+accumulating uncertainty.  This presents issues when large numbers of
 operations are performed in succession (as with fuzzy autoregressive models,
-aggregations).  Ordered fuzzy numbers (OFNs) remedy this issue by augmenting fuzzy
-numbers with a notion of <em>orientation</em> or <em>trend</em>. This results in arithmetic operations with unique additive inverses, allowing
-for better management of accumulated uncertainty. Orientation has also 
-proven useful for modeling <a href="https://arxiv.org/abs/2011.01980">temporal
+aggregations).  Ordered fuzzy numbers (OFNs) remedy these concerns by augmenting fuzzy
+numbers with a notion of <em>orientation</em> or <em>trend</em>. This yields arithmetic operations with unique additive inverses, allowing
+for better management of accumulated uncertainty. Orientation also has
+applications in modeling <a href="https://arxiv.org/abs/2011.01980">temporal
 data</a>.</p>
 <p> A typed ordered fuzzy number (TOFN) is an OFN constructed from
 functions of a common family or <em>type</em>. Arithmetic operations
