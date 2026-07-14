@@ -4,8 +4,16 @@
         <title>mkukla.net</title>
         <description>Matt Kukla's personal webpage</description>
         <link>https://mkukla.net</link>
+        <item>
+            <title>Added slides for CT2026 talk: "Orthogonal Factorization Systems 
+            for Double Categories"
+            </title>
+            <description>Uploaded abstract and slides from talk at Johns Hopkins.
+            </description>
+            <link>https://mkukla.net/talks/ct26.pdf</link>
+        </item>
     <item>
-        <title>New preprint: ``Double Orthogonal Factorization Systems''</title>
+        <title>New preprint: "Double Orthogonal Factorization Systems"</title>
         <description>Abstract: We define strict and lax orthogonal factorization
         systems on double categories. These consist of an orthogonal
         factorization system on arrows and one on double cells that are
