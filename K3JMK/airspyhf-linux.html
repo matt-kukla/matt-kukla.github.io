@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Airspy HF+ and udev </title>
+<title>Airspy HF+ udev configuration </title>
 <h1 style="text-align:center">Airspy HF+ udev configuration</h1><hr>
+<p>(originally written January 2022)</p>
 <p>
-Some driver packages for the AirspyHF+ will not configure udev
+Some Linux distributions' driver packages for the AirspyHF+ will not configure udev
 rules correctly, which results in the device being visible only with root 
 privileges.
 </p>
-<p>
-Check first that the Airspy is visible as root.  There are two simple ways
+Check first that the Airspy is actually visible as root.  Two simple ways
 to do this:
 <ul>
     <li>Run your SDR application of choice as root, and see if the device
@@ -22,7 +22,7 @@ to do this:
     <blockquote><code>
     AirSpy HF library version: 1.6.8<br><br>
 
-    S/N: &ltserial number&gt <br>
+    S/N: &lt;serial number&gt; <br>
     Part ID: 0x00000002<br>
     Firmware Version: R3.0.7-CD<br>
     Available sample rates: 912 kS/s 768 kS/s 456 kS/s
@@ -34,8 +34,7 @@ to do this:
 </ul>
 If neither of the above work, there may be a larger issue at hand.  Try looking
 at dmesg to see if the Airspy is detected at all.
-</p>
-<p>
+<br><br>
 After verifying that the device is actually visible as root, it is fairly
 straightforward to configure udev.
   Edit <code>/etc/udev/rules.d/52-airspyhf.rules</code> to contain:
@@ -48,12 +47,12 @@ group.  After adding yourself to this group, inotify should pick up the changes
 and reload everything automatically.  If not, a quick reload of udev rules will
 set everything in order (on most distributions, you can do this with
 <code>udevadm</code>).
-</p>
+
 <br>
 <hr>
 <a href="index.html">
 <img src="../imgs/buttons/lbuttongr.png" alt="Back"
 style="vertical-align:middle"></a>   Back to the homepage of <a
 href="index.html">Matt Kukla K3JMK</a>
-</div>
+
 </html>
