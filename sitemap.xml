@@ -19,7 +19,10 @@
   <loc>http://mkukla.net/rss.xml</loc>
 </url>
 <url>
-  <loc>http://mkukla.net/misc/cv_mkukla.pdf</loc>
+  <loc>http://mkukla.net/K3JMK/</loc>
+</url>
+<url>
+  <loc>http://mkukla.net/misc/mkukla.pdf</loc>
 </url>
 <url>
   <loc>http://mkukla.net/key_mkukla.txt</loc>
@@ -31,7 +34,7 @@
   <loc>http://mkukla.net/xmpp:mkukla@jab.im</loc>
 </url>
 <url>
-  <loc>http://mkukla.net/K3JMK/</loc>
+  <loc>http://mkukla.net/math/collab.html</loc>
 </url>
 <url>
   <loc>http://mkukla.net/papers/dofs.pdf</loc>
@@ -46,7 +49,10 @@
   <loc>http://mkukla.net/papers/ofn.pdf</loc>
 </url>
 <url>
-  <loc>http://mkukla.net/math/collab.html</loc>
+  <loc>http://mkukla.net/talks/ct26-abs.pdf</loc>
+</url>
+<url>
+  <loc>http://mkukla.net/talks/ct26.pdf</loc>
 </url>
 <url>
   <loc>http://mkukla.net/talks/act2024.pdf</loc>
@@ -97,7 +103,10 @@
   <loc>http://mkukla.net/imgs/misc/nlab.png</loc>
 </url>
 <url>
-  <loc>http://mkukla.net/misc/milenkovic.txt</loc>
+  <loc>http://mkukla.net/misc/milenkovic.html</loc>
+</url>
+<url>
+  <loc>http://mkukla.net/misc/carpet.html</loc>
 </url>
 <url>
   <loc>http://mkukla.net/misc/birds.html</loc>
@@ -265,7 +274,7 @@
   <loc>http://mkukla.net/../imgs/3d/ANGULAR.PNG</loc>
 </url>
 <url>
-  <loc>http://mkukla.net/../imgs/3d/DEONTOLG.PNG</loc>
+  <loc>http://mkukla.net/../imgs/3d/ETIOLOG.PNG</loc>
 </url>
 <url>
   <loc>http://mkukla.net/../imgs/3d/SEA_1.PNG</loc>
@@ -287,14 +296,5 @@
 </url>
 <url>
   <loc>http://mkukla.net/../imgs/3d/ATMO.PNG</loc>
-</url>
-<url>
-  <loc>http://mkukla.net/../imgs/3d/SQUIGGLE.PNG</loc>
-</url>
-<url>
-  <loc>http://mkukla.net/../imgs/3d/MIRRORS.PNG</loc>
-</url>
-<url>
-  <loc>http://mkukla.net/../imgs/3d/TEMPLE.PNG</loc>
 </url>
 </urlset>

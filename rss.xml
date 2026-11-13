@@ -5,6 +5,15 @@
     <description>Matt Kukla's personal webpage</description>
     <link>https://mkukla.net</link>
     <item>
+        <title>"Double Orthogonal Factorizations" published in Applied
+        Categorical Structures</title>
+        <description>"Double Orthogonal Factorization Systems" has been accepted
+        for publication in Applied Categorical Structures' collection honouring
+        Robert Par$eacute;'s 80th birthday</description>
+        <guid>https://link.springer.com/article/10.1007/s10485-026-09891-x</guid>
+        <link>https://link.springer.com/article/10.1007/s10485-026-09891-x</link>
+    </item>
+    <item>
         <title>Added slides for CT2026 talk: "Orthogonal Factorization Systems for Double 
         Categories"</title>
         <description>Uploaded abstract and slides from talk at Johns Hopkins.</description>
